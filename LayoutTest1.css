@@ -1,0 +1,242 @@
+
+Layout2 class
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+div p:first-child{/*div의 자손 중에서 첫 번째 요
+소가 p태그냐? 그러면 선택하라*/
+   background-color: red;
+}
+
+div p:last-child {/*div의 자손 중에서 마지막 번째 요
+소가 p태그냐? 그러면 선택하라*/
+   background-color: blue;
+}
+
+div p:nth-child(3) {/*div의 자손 중에서 세 번째 요
+소가 p태그냐? 그러면 선택하라*/
+   color: red;
+}
+
+div p:nth-last-child(3) {/*div의 자손 중에서 뒤에서 
+세 번째 요소가 p태그냐? 그러면 선택하라  */
+   color: green;
+}
+
+[
+</style>
+</head>
+<body>
+<div>
+   
+   <p>1</p>
+   <p>2</p>
+   <p>3</p>
+   <p>4</p>
+   <div>
+      <p>a</p>
+      <p>b</p>
+      <p>c</p>
+   </div>
+   <p>5</p>
+   <p>6</p>
+   <p>7</p>
+   <p>8</p>
+</div>
+
+</body>
+</html>
+]
+[	
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+   p:first-child {
+      color: red;
+   }
+
+
+</style>
+
+</head>
+<body>
+]
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link href="layout2.css" type="text/css" rel="stylesheet">
+
+h1.cc:first-of-type {
+      border: 3px solid violet;
+   } <!-- 생략 가능함 -->
+
+</head>
+<body>
+<div id="wrap">
+   <header>
+      <img alt="ezen logo" src="test.gif">
+      <p>ezen 202</p>
+   </header>
+   
+   <div class="clear"></div>   
+   
+   <nav>
+      <ul>
+         <li><a href="https://www.naver.com">naver</a></li>
+         <li><a href="https://www.google.com">google</a></li>
+         <li><a href="https://www.nate.com">nate</a></li>
+         <li><a href="https://www.daum.net">daum</a></li>      
+      </ul>
+   </nav>
+
+   <article>
+      <hgroup>
+         <h1>제목입니다.</h1>
+         <h2>부제목입니다.</h2>
+      </hgroup>
+      
+      <p>section태그 안에 넣지 않을 내용을 여기에 적어 주세요.</p>
+      <section>
+         <h2>section 글의 제목</h2>
+         쓰고 싶은 글을 맘껏 작성해 주세요.
+         <br>
+         오늘도 거의 다 끝습니다. 시간이 왜 이렇게 빨리 가는지. 여러분들도 그렇게 느끼십니까?
+         
+      
+      </section>
+   
+   
+   </article>
+   
+   <footer>
+      <p>copyright@ 이메일 수집을 거부합니다.</p>
+      <p>이젠 의정부 202</p>
+   
+   </footer>
+
+
+
+
+
+</div>
+</body>
+</html>
+
+
+
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font-famliy: "고딕","malgunGothic","dotum";
+	font-size: 1em;
+	color.rgba(51,51,51,1);
+}
+#wrap{
+	margin:0 auto;
+	padding:800px;
+}
+
+.clear{
+	clear.both;
+}
+
+img{
+	border:0;
+
+}
+
+hearder{
+	padding:20px;
+	margin-top:10px;
+	background-color.rgba(204,225,225,1);
+	border:1px solid rgba(102,102,102,1);
+	border-radius:5px 30px;
+	
+}
+
+nav{
+	border. 1px solid rgba(102,102,102,1);
+	background-color.rgba(255,232,247,1);
+	margin:5px 0;
+	padding: 5px;
+	height:330px;
+	width: 150px;
+	float: left;
+	border-radius:5px;
+}
+54 nav ul{
+	list-style: none;
+	margin: 0;
+	padding : 0;
+}
+
+nav ul li{
+	padding: 0 5px 0 0;
+}
+
+nav ul li a{
+	padding: 1px 20px 3px 20px;
+	color: rgba(51, 51, 51, 1);
+	text-decoration: none;
+	display:block;
+}
+
+nav ul li a: hover{
+	background-color: rgba(101,153,255,1);
+	border-radius:10px;
+	color: rgba(255,255,255,1);
+}
+
+article{
+	background-color:rgba(255,255,204,1);
+	border: 1px solid rgba(102,102,102,1);
+	margin: 5px 0;
+	padding: 15px;
+	border-radius: 5px;
+	font-size: 12px;
+	float:right;
+	width:600px;
+		
+}
+
+article hgroup{
+	padding: 5px;
+}
+
+97
+article hgroup h1, article hgroup h2{
+	margin 0;
+	padding: 2px 0;
+}
+
+article hgroup h1{
+	font-size: 22px;
+}
+
+article hgroup h2{
+	font-size: 17px;
+}
+111
+section{
+	width: 250px;
+	padding : 10px;
+	margin: 10px;
+	border:1px solid rgba(102,102,102,1);
+	border-radius:5px
+	backgorund-imageurl("title.png");
+
+
+}
